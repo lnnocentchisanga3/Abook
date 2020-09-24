@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate the Fees</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+<nav>
+	<div class="header">
+		<a class="second-link-back" href="index.html">Akabook</a>
+	</div>
+	<div class="brand">
+		<a class="second-link-back" href="index.html"><i><img src="arrow.PNG" style="width: 10%;"></i>Go Back</a>
+	</div>
+</nav>
+
+<section class="container-fluid">
+	<div class="row">
+		<div class="form-group col-lg-12 mt-5">
+			<input type="text" id="item" name="amount" placeholder="Enter what you want Todo" class="form-control">
+		</div>
+		<div class="form-group col-lg-12 mt-2">
+			<input type="submit" name="amount" id="add" value="+ Add" class="form-control btn btn-primary">
+		</div>
+
+		<div class="container">
+			<ul class="todo" id="todo"></ul>
+			<ul class="todo" id="completed"></ul>
+		</div>
+	</div>
+</section>
+
+<script>
+	
+	(function() {
+
+		var data = localStorage.getItem("todolist") ? JSON.parse(localStorage.getItem("todolist")) : {item:[] };
+
+
+		function update() {
+			localStorage.setItem("todolist", JSON.stringify(data));
+		}
+
+		var todo = document.querySelector('#todo');
+		var completed = document.querySelector('#completed');
+		var item = document.querySelector('#item');
+		document.querySelector('#add').addEventListener('click', add_item);
+
+		item.addEventListener('keydown', function(e){
+			if(e.code==="Enter"){
+				add_item();			}
+		});
+
+		if (data.item){
+			for (var i = 0; i < data.item.length; i++) {
+				attach_to_dom(data.item[i]);
+			}
+			todo.addEventListener("click", button_click);
+			completed.addEventListener("click", button_click);
+		}
+		function button_click(event) {
+			var target = event.target;
+			if (target.tagName !== "BUTTON") return;
+			
+			var li = target.parentNode.parentNode;
+			var data_id =parseInt(li.getAttribute('data-id'));
+
+			if (target.className == "remove"){
+				remove_item(data_id);
+			}
+
+			if (target.className == "complete"){
+				update_item(data_id);
+			}
+			update();
+			li.parentNode.removeChild(li);
+		}
+		function remove_item(search) {
+			data.item = data.item.filter(function(el) {
+				return el.id !== search;
+			});
+		}
+
+		function update_item(search) {
+			for (var i = 0; i < data.item.length; i++) {
+				if (data.item[i].id == search){
+					data.item[i].completed =! data.item[i].completed;
+
+					attach_to_dom(data.item[i]);
+					break;
+				}
+			}
+		}
+		function add_item(){
+			if (!item.value) return;
+			var current_item = {
+				id : Math.floor(Math.random()*100),
+				value: item.value,
+				completed: false
+			}
+			data.item.push(current_item);
+			attach_to_dom(current_item);
+			item.value = '';
+			update();
+			console.log(data.item);
+		}
+
+		function attach_to_dom(data) {
+			var placeholder = data.completed ? completed : todo;
+			placeholder.innerHTML += render(data);
+		}
+
+		function render(data) {
+			return(
+				`<li data-id="${data.id}">${data.value}
+					<div class="buttons">
+						<button class="remove">&#10007;</button>
+						<button class="complete">&#10004;</button>
+					</div>
+				</li>`
+
+				)
+		}
+	})();
+</script>
+
+	<!-- <script src="js/calculator.js"></script> -->
+	<!-- <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/modal-pop.js"></script>
+   <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+ Contact Form JavaScript File -->
+  <!-- <script src="contactform/contactform.js"></script> -->
+
+  <!-- Template Main Javascript File -->
+ <!--  <script src="js/main.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <script>
+      CKEDITOR.replace( 'editor1' );
+  </script>  -->
+</body>
+</html>

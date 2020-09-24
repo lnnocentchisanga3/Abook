@@ -1,0 +1,285 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+nav{
+	width: 100%;
+	height: 5rem;
+	background-color: dodgerblue;
+	font-family: arial, sans-serif;
+	color: white;
+}
+#myLinks{
+	display: none;
+}
+#myLinks {
+  margin-top: 50pc
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+}
+.mmfees{
+	width: 100%;
+	margin-top: 20px;
+}
+#display{
+	width: 90%;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	border: 1px solid dodgerblue;
+	margin-left: 5%;
+	margin-top: 50px;
+	height: 70px;
+	border-radius: 1px;
+	background-color: white;
+	color: dodgerblue;
+}
+input{
+	margin-top: 5px;
+}
+
+input[type="text"]{
+	width: 100%;
+	
+	height: 8vh;
+	margin-top: 1.5rem;
+	border-radius: .5rem;
+	border: none;
+	border: 1px solid dodgerblue;
+}
+form{
+	width: 90%;
+	margin-top: 2rem;
+	margin-left: 5%;
+}
+input[type="button"]{
+	width: 15%;
+	margin-left: 2%;
+	height: 8vh;
+	border-radius: .5rem;
+	border: none;
+	border: 1px solid dodgerblue;
+}
+input[type="button"]:hover{
+	cursor: pointer;
+}
+.btn{
+	margin-left: 5%;
+}
+#disp{
+	text-align: right;
+	font-size: 14pt;
+	font-weight: bold;
+}
+#equals{
+	background-color: red;
+	color: white;
+	width: 35%;
+}
+input[placeholder="Enter the Amount in kwacha"]{
+	text-align: center;
+	color: #000;
+}
+input[placeholder="Enter what you want Todo"]{
+	text-align: center;
+	color: #000;
+}
+.button{
+	width: 50%;
+	margin-top: 5px;
+	height: 7vh;
+	border: none;
+	color: white;
+	font-size: 20px;
+	background-color: dodgerblue;
+	margin-left: 25%;
+	border-radius: 1px;
+	box-shadow: 4px 5px lightgrey;
+}
+.click, .cls:hover{
+	cursor: pointer;
+}
+button:hover{
+	background-color: white;
+	color: dodgerblue;
+	cursor: pointer;
+	border: 1px solid dodgerblue;
+}
+.head h4{
+	margin-top: 10px;
+	margin-left: 5%;
+	font-family: arial, sans-serif;
+}
+.menu{
+	margin-left: 0%;
+}
+.header{
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+	margin-left: 1rem;
+}
+.header a{
+	color: white;
+	text-decoration-line: none;
+}
+.navbar-brand{
+	padding-top: 2rem;
+	margin-left: 2rem;
+}
+.header a, .brand a, .navbar-brand a{
+	font-family: chiller;
+	font-size: 20pt;
+	font-weight: bold;
+}
+.brand{
+	margin-top: -6.5rem;
+	margin-left: 60%;
+	font-family: arial, sans-serif;
+}
+.brand a{
+	margin-left: 1rem;
+	color: white;
+	text-decoration-line: none;
+}
+.brand a:hover{
+	background-color: white;
+	color: dodgerblue;
+	text-decoration-line: underline;
+}
+.navbar-brand a{
+	color: white;
+	text-decoration-line: none;
+}
+img{
+	width: 20%;
+}
+.buttons{
+	float: right;
+}
+.buttons button{
+	margin-top: -1rem;
+	cursor: pointer;
+	border: 1rem solid transparent;
+	vertical-align: middle;
+}
+ul{
+	width: 90%;
+	margin-left: 5%;
+}
+ li{
+	color: #333;
+	background-color: white;
+	border: 0.1rem solid lightgrey;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 2px lightgrey;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	word-wrap: break-word;
+	list-style-type: none;
+}
+#todo:empty:after{
+	content: "Nothing to do";
+}
+#completed:empty:after{
+	content: "You can complete or add new task";
+	text-align: center;
+}
+#completed{
+	background-color: #edf0f1;
+	opacity: 0.5;
+	margin-top: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+#todo{
+	background-color: #edf0f1;
+	opacity: 0.9;
+	margin-top: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+.container-fluid{
+	width: 100%;
+}
+
+input[type="number"]{
+	margin-top: 2rem;
+	width: 80%;
+	margin-left: 10%;
+	height: 3rem;
+	border-radius: 2rem;
+	border: none;
+	border: 0.5px solid dodgerblue;
+}
+input[type="number"]:hover{
+	border: 2px solid dodgerblue;
+}
+input[placeholder="Enter the amount of money"]{
+	color: dodgerblue;
+	padding-left: 2rem;
+}
+input[type="submit"]{
+	margin-top: 1rem;
+	width: 80%;
+	margin-left: 10%;
+	height: 3rem;
+	border-radius: 2rem;
+	border: none;
+	border: 0.5px solid dodgerblue;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+input[value="Plan"]{
+	color: dodgerblue;
+	font-weight: bold;
+}
+input[value="+ Add"]{
+	color: dodgerblue;
+	font-weight: bold;
+}
+.col-sm-12{
+	border: 1px solid dodgerblue;
+	margin-top: 2rem;
+	width: 80%;
+	margin-left: 10%
+}
+.col-sm-12 p{
+	margin-top: 2rem;
+	text-align: center;
+	border-bottom: 1px solid dodgerblue;
+	padding: 1rem;
+
+}
+.row{
+	width: 100%;
+}
+.click{
+	padding: 1rem;
+	float: left;
+	text-align: center;
+	margin-top: 1rem;
+	width: 50%;
+}
+.click:hover{
+	background-color: dodgerblue;
+	
+	border-radius: 6rem;
+	border: 1px solid dodgerblue;
+}
+.click a{
+	text-decoration-line: none;
+	color: black;
+}
+.click a:hover{
+	color: white;
+}
+img{
+	width: 50%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate the Fees</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+<nav>
+	<div class="header">
+		<a class="second-link-back" href="index.html">Akabook</a>
+	</div>
+	<div class="brand">
+		<a class="second-link-back" href="index.html"><i><img src="images/arrow.PNG" style="width: 10%;"></i>Go Back</a>
+	</div>
+</nav>
+<script>
+	function myClick(a) {
+		myForm.display.value+=a;
+	}
+	function equalto() {
+		myForm.display.value=eval(myForm.display.value);
+	}
+	function allClear() {
+		myForm.display.value= " ";
+	}
+	function del() {
+		var back = myForm.display.value;
+		myForm.display.value=back.substr(0,back.length-1);
+	}
+</script>
+
+<section class="container-fluid">
+	<div class="row">
+		<form name="myForm">
+			<input type="text" name="display" id="disp"><br><br>
+			<div class="btn">
+			<input type="button" name="btn7" value="7" onclick="myClick('7')">
+			<input type="button" name="btn8" value="8" onclick="myClick('8')">
+			<input type="button" name="btn9" value="9" onclick="myClick('9')">
+			<input type="button" name="btndel" value="DEL" onclick="del()">
+			<input type="button" name="btnac" value="AC" onclick="allClear()">
+			<input type="button" name="btn4" value="4" onclick="myClick('4')">
+			<input type="button" name="btn5" value="5" onclick="myClick('5')">
+			<input type="button" name="btn6" value="6" onclick="myClick('6')">
+			<input type="button" name="btnsub" value="-" onclick="myClick('-')">
+			<input type="button" name="btnadd" value="+" onclick="myClick('+')">
+			<input type="button" name="btn1" value="1" onclick="myClick('1')">
+			<input type="button" name="btn2" value="2" onclick="myClick('2')">
+			<input type="button" name="btn3" value="3" onclick="myClick('3')">
+			<input type="button" name="btndiv" value="%" onclick="myClick('/')">
+			<input type="button" name="btntimes" value="x" onclick="myClick('*')">
+			<input type="button" name="btnzerozero" value="00" onclick="myClick('00')">
+			<input type="button" name="btnzero" value="0" onclick="myClick('0')">
+			<input type="button" name="btnpoint" value="." onclick="myClick('.')">
+			<input id="equals" type="button" name="btnequal" value="=" onclick="equalto('=')">
+			</div>
+		</form>
+	</div>
+</section>
+
+
+	<script src="js/calculator.js"></script>
+	<!-- <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/modal-pop.js"></script>
+   <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+ Contact Form JavaScript File -->
+ <!--  <script src="contactform/contactform.js"></script> -->
+
+  <!-- Template Main Javascript File -->
+ <!--  <script src="js/main.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <script>
+      CKEDITOR.replace( 'editor1' );
+  </script>  -->
+</body>
+</html>

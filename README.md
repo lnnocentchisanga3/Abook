@@ -1,2 +1,1 @@
-# Abook
-an app that tracks expenses
+# personal-helper
