@@ -131,9 +131,8 @@ button:hover{
 	margin-left: 2rem;
 }
 .header a, .brand a, .navbar-brand a{
-	font-family: chiller;
+	font-family: arial, sans-serif;
 	font-size: 20pt;
-	font-weight: bold;
 }
 .brand{
 	margin-top: -6.5rem;
@@ -141,15 +140,13 @@ button:hover{
 	font-family: arial, sans-serif;
 }
 .brand a{
-	margin-left: 1rem;
 	color: white;
-	text-decoration-line: none;
 }
-.brand a:hover{
+/*.brand a:hover{
 	background-color: white;
 	color: dodgerblue;
 	text-decoration-line: underline;
-}
+}*/
 .navbar-brand a{
 	color: white;
 	text-decoration-line: none;

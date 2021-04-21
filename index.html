@@ -3,55 +3,34 @@
 <head>
 	<title>Calculate the Fees</title>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">  -->
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 <nav>
 	<div class="navbar-brand">
-		<a class="second-link-back" href="index.html">AkaBook</a>
+		<a class="text-uppercase nav-link text-white" href="index.html">ChisFams</a>
 	</div>
 
 </nav>
 
 <section class="container-fluid">
 	<div class="row">
-		<div class="click"><a href="mmfees.html" ><i><img src="mmfees.PNG"> </i><br>mm Fees</a></div>
+		<div class="click"><a href="mmfees.html" ><i class="fa fa-dollar fa-4x"></i><br>mm Fees</a></div>
 		<div class="click"><a href="#"><i><img src="calander.PNG"> </i><br>Calander</a></div>
-		<div class="click"><a href="todolist.html"><i><img src="Todolist.PNG"> </i><br>Todo List</a></div>
-		<div class="click"><a href="calculator.html"><i><img src="calculator.PNG"> </i><br>Calculator</a></div>
-		<div class="click"><a href="#"><i><img src="budget.PNG"> </i><br>Budget</a></div>
-		<div class="click"><a href="mplanner.html"><i><img src="moneyp.PNG"> </i><br>Money Planner</a></div>
+		<div class="click"><a href="todolist.html"><i class="fa fa-list fa-4x"></i><br>Todo List</a></div>
+		<div class="click"><a href="calculator.html"><i class="fa fa-calculator fa-4x"></i><br>Calculator</a></div>
+		<div class="click"><a href="#"><i class="fa fa-copy fa-4x"></i><br>Budget</a></div>
+		<div class="click"><a href="mplanner.html"><i class="fa fa-money fa-4x"></i><br>Money Planner</a></div>
 	</div>
 </section>
 
-
+<h6 class="text-center mt-5"><span id="date"></span>&copy; Property of Chisfams.</h6>
 	<script src="js/calculator.js"></script>
-	<!-- <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/modal-pop.js"></script>
-   <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script> -->
-  <!-- Contact Form JavaScript File -->
-  <!-- <script src="contactform/contactform.js"></script> -->
+	<script>
+		var date = new Date();
 
-  <!-- Template Main Javascript File -->
-<!--   <script src="js/main.js"></script>
-  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
-  <script>
-      CKEDITOR.replace( 'editor1' );
-  </script> -->
+		document.getElementById('date').innerHTML = date.getFullYear();
+	</script>
 </body>
 </html>

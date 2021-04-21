@@ -1,0 +1,43 @@
+#loader, #loader1 , #loader2 ,#loader3, #loader4, #loader5{
+			  border: 36px solid #f3f3f3;
+			  border-radius: 50%;
+			  border-top: 16px solid white;
+			   border-bottom: 16px solid white;
+			    border-left: 16px solid red;
+			     border-right: 16px solid dodgerblue;
+			  width: 50px;
+			  height: 50px;
+			  margin: auto;
+			  -webkit-animation: spin 2s linear infinite; /* Safari */
+			  animation: spin 2s linear infinite;
+			}
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
+
+		.animate-bottom{
+			position: relative;
+			-webkit-animation-name:
+			animatebottom;
+			-webkit-animation-duration: 3s;
+			animation-name: animatebottom;
+			animation-duration: 3s;
+		}
+		@-webkit-@keyframes animatebottom{
+			from{ bottom: -100px; opacity: 0}
+			to{bottom: 0px; opacity: 1} 
+		}
+		@keyframes animatebottom{
+			from{ bottom: -100px; opacity: 0}
+			to{bottom: 0px; opacity: 1} 
+		}
+
+
+#table{
+	height: 58vh;
+	overflow: auto;
+}
+
+
+		

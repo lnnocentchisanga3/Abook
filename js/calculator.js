@@ -73,7 +73,7 @@ var ansBus = 60/100;
 
 //investment account
 
-var investment = 15/100;
+var investment = 10/100;
 	var investmentf = investment * money;
 
 	if (investmentf == 0.1 || investmentf == 0.2 || investmentf == 0.3 || investmentf == 0.4 || investmentf == 0.5 || investmentf == 0.6 || investmentf == 0.7 || investmentf == 0.8 || investmentf == 0.9) {
@@ -110,5 +110,21 @@ var leisure = 5/100;
 		document.getElementById('showleisure').innerHTML = "Vacation Account: K "+leisuref;
 	}
 }
+
+//Extra
+
+
+var extra = 5/100;
+	var extraCash = extra * money;
+
+	if (extraCash == 0.1 || extraCash == 0.2 || extraCash == 0.3 || extraCash == 0.4 || extraCash == 0.5 || extraCash == 0.6 || extraCash == 0.7 || extraCash == 0.8 || extraCash == 0.9) {
+		var convertExtra = extraCash*10;
+		document.getElementById('showExtra').innerHTML = convertExtra+" ngwe";
+	}else{
+		document.getElementById('showExtra').innerHTML = "Extra Account: K "+extraCash;
+	}
 }
+
+
+
 
