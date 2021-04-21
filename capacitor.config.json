@@ -1,0 +1,13 @@
+{
+  "appId": "com.chisfams.app",
+  "appName": "Chisfams MMF",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "C:/Users/V3CT0R40/OneDrive/Documents/Abook",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

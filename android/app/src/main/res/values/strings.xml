@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Chisfams MMF</string>
+    <string name="title_activity_main">Chisfams MMF</string>
+    <string name="package_name">com.chisfams.app</string>
+    <string name="custom_url_scheme">com.chisfams.app</string>
+</resources>

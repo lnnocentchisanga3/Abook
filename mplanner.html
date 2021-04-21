@@ -3,40 +3,74 @@
 <head>
 	<title>Calculate the Fees</title>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
+<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 </head>
-<body>
-<nav>
-	<div class="header">
-		<a class="second-link-back" href="index.html">Akabook</a>
+<body onload="disData()">
+<head >
+	<div class="bg-primary col-sm-12">
+		<h4 class="text-uppercase py-2 text-white" href="index.html">ChisFams</h4>
 	</div>
-	<div class="brand">
-		<a class="second-link-back" href="index.html"><i><img src="arrow.PNG" style="width: 10%;"></i>Go Back</a>
-	</div>
-</nav>
+</head>
 
-<section class="container-fluid">
+<section class="container-fluid" id="dataShow">
 	<div class="row">
-		<div class="form-group col-lg-12 mt-5">
-			<input type="number" id="amountPlan" name="amount" placeholder="Enter the amount of money" class="form-control">
+		<div class="form-group col-lg-12 mt-1">
+			<input type="number" id="amountPlan" name="amount" placeholder="Enter the amount of money" class="form-control" min="1">
 		</div>
-		<div class="form-group col-lg-12 mt-2">
-			<input type="submit" name="amount" id="click" onclick="planMoney()" value="Plan" class="form-control btn btn-primary">
+		<div class="form-group col-lg-12">
+			<input type="submit" name="amount" id="click" onclick="planMoney()" value="Plan" class="form-control btn btn-primary text-white">
 		</div>
 
-		<div class="col-sm-12">
-			<p id="show" >Amount</p>
-			<p id="showTitle" ></p>
-			<p id="showMe" ></p>
-			<p id="showBills" ></p>
-			<p id="showBus" ></p>
-			<p id="showInvestment" ></p>
-			<p id="showleisure"></p>
-			<p id="showExtra"></p>
+		<div class="container" id="displayData">
+			<div class="row">
+			<p class="border-bottom col-sm-12 py-3 text-center bg-primary text-white" id="show">Amount</p>
+			<p class="border-bottom col-sm-12 py-3 " id="showTitle" ></p>
+			<p class="border-bottom col-sm-12 py-3 " id="showMe" ></p>
+			<p class="border-bottom col-sm-12 py-3 " id="showBills" ></p>
+			<p class="border-bottom col-sm-12 py-3 " id="showBus" ></p>
+			<p class="border-bottom col-sm-12 py-3 " id="showInvestment" ></p>
+			<p class="border-bottom col-sm-12 py-3 " id="showleisure"></p>
+			<p class="border-bottom col-sm-12 py-3 mb-4" id="showExtra"></p>
+			</div>
 		</div>
 	</div>
 </section>
+<footer class="">
+	<nav class="navbar navbar-light">
+ <!--  <a class="nav-brand text-uppercase text-light" href="index.html">ChisFams</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+    <ul class="">
+      <li style="display: inline-flex;">
+        <a class="mx-1  text-white" href="./index.html"><i class="fa fa-home fa-2x"></i></span></a>
+      </li>
+      <li class="" style="display: inline-flex;">
+        <a class="mx-1  text-white" href="#"><i class="fa fa-calendar fa-2x"></i></a>
+      </li>
+      <li class="" style="display: inline-flex;">
+        <a class="mx-1  text-white" href="#"><i class="fa fa-list fa-2x"></i></a>
+      </li>
+      <li class="" style="display: inline-flex;">
+        <a class="mx-1  text-white " href="#"><i class="fa fa-calculator fa-2x"></i></a>
+      </li>
+      <li style="display: inline-flex;">
+      	<a href="#" class="mx-1  text-white"><i class="fa fa-copy fa-2x"></i></a>
+      </li>
+      <li style="display: inline-flex;" class=" active" >
+      	<a href="mplanner.html" class="mx-1  text-white"><i class="fa fa-money fa-2x"></i></a>
+      </li>
+    </ul>
+  <!-- </div> -->
+</nav>
+</footer>
 
 
 	<script src="js/calculator.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

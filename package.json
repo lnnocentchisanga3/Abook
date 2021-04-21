@@ -1,0 +1,31 @@
+{
+  "name": "chisfamsmmf",
+  "version": "1.0.0",
+  "description": "the app to manage funds",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@capacitor/android": "^2.4.7",
+    "@capacitor/cli": "^2.4.7",
+    "@capacitor/core": "^2.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnnocentchisanga3/Abook.git"
+  },
+  "author": "Innocent chisanga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lnnocentchisanga3/Abook/issues"
+  },
+  "scripts": {
+    "build": "command-to-build (ex: webpack, tsc, babel, etc.)"
+  },
+  "homepage": "https://github.com/lnnocentchisanga3/Abook#readme"
+}
